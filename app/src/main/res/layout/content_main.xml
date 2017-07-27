@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cl.cutiko.aboutme.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tex1"
+        android:layout_width="wrap_content"
+        android:text="aaaaa"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tex2"
+    android:layout_alignRight="@id/tex1"
+        android:layout_width="wrap_content"
+        android:text="bbbbbbbbbb"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ccccc"
+        android:layout_below="@id/tex1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tex2"
+        android:text="ddddd"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
